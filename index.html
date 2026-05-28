@@ -1,251 +1,296 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>데일리브리핑</title>
+    <title>데일리브리핑</title>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1608805182724152"
+      crossorigin="anonymous"
+    ></script>
 
-  <style>
-    * { box-sizing: border-box; }
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      padding: 16px;
-      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-      background: #070b14;
-      color: #d8dee9;
-      line-height: 1.7;
-    }
-
-    .card {
-      max-width: 760px;
-      margin: 40px auto;
-      overflow: hidden;
-      border-radius: 14px;
-      border: 1px solid rgba(120, 145, 190, 0.25);
-      background:
-        radial-gradient(circle at top left, rgba(56, 89, 145, 0.25), transparent 40%),
-        linear-gradient(145deg, #17243b, #101827);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.45);
-    }
-
-    .top {
-      height: 72px;
-      padding: 0 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(255, 238, 180, 0.11);
-    }
-
-    .brand {
-      font-size: 21px;
-      font-weight: 800;
-      color: #eef2f8;
-    }
-
-    .notify {
-      padding: 7px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(212, 164, 60, 0.7);
-      color: #d4a43c;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .content {
-      padding: 34px;
-    }
-
-    .time {
-      text-align: center;
-      color: #8794aa;
-      font-size: 16px;
-      margin-bottom: 26px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 24px;
-      line-height: 1.4;
-      letter-spacing: -0.04em;
-      color: #edf3ff;
-    }
-
-    .subtitle {
-      margin: 4px 0 28px;
-      font-size: 20px;
-      color: #aeb8c8;
-      letter-spacing: -0.03em;
-    }
-
-    section {
-      margin-top: 26px;
-    }
-
-    h3 {
-      margin: 0 0 8px;
-      color: #d4a43c;
-      font-size: 20px;
-      letter-spacing: -0.03em;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 22px;
-    }
-
-    li {
-      margin: 7px 0;
-      font-size: 20px;
-      color: #d8dee9;
-      letter-spacing: -0.04em;
-    }
-    
-    li a {
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 16px;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+          "Noto Sans KR", sans-serif;
+        background: #070b14;
         color: #d8dee9;
-        text-decoration: none;
-    }
-
-    li a:hover {
-        color: #facc15;
-    }
-
-    footer {
-      margin-top: 34px;
-      color: #59677a;
-      font-size: 15px;
-    }
-
-    @media (max-width: 520px) {
-      body { padding: 10px; }
+        line-height: 1.7;
+      }
 
       .card {
-        margin: 10px auto;
+        max-width: 760px;
+        margin: 40px auto;
+        overflow: hidden;
+        border-radius: 14px;
+        border: 1px solid rgba(120, 145, 190, 0.25);
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(56, 89, 145, 0.25),
+            transparent 40%
+          ),
+          linear-gradient(145deg, #17243b, #101827);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
       }
 
       .top {
-        height: 64px;
-        padding: 0 20px;
+        height: 72px;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 238, 180, 0.11);
+      }
+
+      .brand {
+        font-size: 21px;
+        font-weight: 800;
+        color: #eef2f8;
+      }
+
+      .notify {
+        padding: 7px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 164, 60, 0.7);
+        color: #d4a43c;
+        font-size: 14px;
+        font-weight: 700;
       }
 
       .content {
-        padding: 26px 22px 30px;
+        padding: 34px;
+      }
+
+      .time {
+        text-align: center;
+        color: #8794aa;
+        font-size: 16px;
+        margin-bottom: 26px;
       }
 
       h1 {
-        font-size: 21px;
+        margin: 0;
+        font-size: 24px;
+        line-height: 1.4;
+        letter-spacing: -0.04em;
+        color: #edf3ff;
       }
 
-      .subtitle,
+      .subtitle {
+        margin: 4px 0 28px;
+        font-size: 20px;
+        color: #aeb8c8;
+        letter-spacing: -0.03em;
+      }
+
+      section {
+        margin-top: 26px;
+      }
+
+      h3 {
+        margin: 0 0 8px;
+        color: #d4a43c;
+        font-size: 20px;
+        letter-spacing: -0.03em;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
       li {
-        font-size: 18px;
+        margin: 7px 0;
+        font-size: 20px;
+        color: #d8dee9;
+        letter-spacing: -0.04em;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <main class="card">
-    <div class="top">
-      <div class="brand">데일리브리핑</div>
-      <div class="notify">알림톡</div>
-    </div>
+      li a {
+        color: #d8dee9;
+        text-decoration: none;
+      }
 
-    <div class="content">
-      <div class="time">오전 7:00</div>
+      li a:hover {
+        color: #facc15;
+      }
 
-      <h1>5월 28일 오늘의 기독교 뉴스 정리</h1>
-      <p class="subtitle">5월 28일 브리핑을 전달해요.</p>
+      footer {
+        margin-top: 34px;
+        color: #59677a;
+        font-size: 15px;
+      }
 
-      
+      @media (max-width: 520px) {
+        body {
+          padding: 10px;
+        }
+
+        .card {
+          margin: 10px auto;
+        }
+
+        .top {
+          height: 64px;
+          padding: 0 20px;
+        }
+
+        .content {
+          padding: 26px 22px 30px;
+        }
+
+        h1 {
+          font-size: 21px;
+        }
+
+        .subtitle,
+        li {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="card">
+      <div class="top">
+        <div class="brand">데일리브리핑</div>
+        <div class="notify">알림톡</div>
+      </div>
+
+      <div class="content">
+        <div class="time">오전 7:00</div>
+
+        <h1>5월 28일 오늘의 기독교 뉴스 정리</h1>
+        <p class="subtitle">5월 28일 브리핑을 전달해요.</p>
+
         <section>
           <h3>[오늘요약]</h3>
-          <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375340"
-     target="_blank"
-     rel="noopener noreferrer">
-    기성 120년차 총회, 이기용 목사 총회장 추대
-  </a>
-</li><li>
-  <a href="https://www.christiantoday.co.kr/news/375348"
-     target="_blank"
-     rel="noopener noreferrer">
-    여의도순복음교회, 67개국 677명 선교사 대회
-  </a>
-</li><li>
-  <a href="https://www.christiantoday.co.kr/news/375346"
-     target="_blank"
-     rel="noopener noreferrer">
-    6.3 지방선거, 성평등·퀴어축제 논란 가열
-  </a>
-</li></ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.christiantoday.co.kr/news/375340"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                기성 120년차 총회, 이기용 목사 총회장 추대
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.christiantoday.co.kr/news/375348"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                여의도순복음교회, 67개국 677명 선교사 대회
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.christiantoday.co.kr/news/375346"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                6.3 지방선거, 성평등·퀴어축제 논란 가열
+              </a>
+            </li>
+          </ul>
         </section>
-      
+
         <section>
           <h3>[교단소식]</h3>
-          <ul><li>
-  <a href="http://www.igoodnews.net/news/articleView.html?idxno=83609"
-     target="_blank"
-     rel="noopener noreferrer">
-    기성, 헌법에 &#039;동성애 반대&#039; 조항 신설
-  </a>
-</li><li>
-  <a href="https://www.christiantoday.co.kr/news/375339"
-     target="_blank"
-     rel="noopener noreferrer">
-    목사부총회장 윤학희, 총무 송우진 목사 선출
-  </a>
-</li></ul>
+          <ul>
+            <li>
+              <a
+                href="http://www.igoodnews.net/news/articleView.html?idxno=83609"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                기성, 헌법에 &#039;동성애 반대&#039; 조항 신설
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.christiantoday.co.kr/news/375339"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                목사부총회장 윤학희, 총무 송우진 목사 선출
+              </a>
+            </li>
+          </ul>
         </section>
-      
+
         <section>
           <h3>[선거·정치]</h3>
-          <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375341"
-     target="_blank"
-     rel="noopener noreferrer">
-    조전혁 후보, 중도보수 진영에 단일화 제안
-  </a>
-</li><li>
-  <a href="https://christian.nocutnews.co.kr/news/6523718"
-     target="_blank"
-     rel="noopener noreferrer">
-    전피연, 신천지 선거 개입 의혹 수사 촉구
-  </a>
-</li><li>
-  <a href="http://www.igoodnews.net/news/articleView.html?idxno=83607"
-     target="_blank"
-     rel="noopener noreferrer">
-    지방선거 후보 다수, 차별금지법 반대 입장
-  </a>
-</li></ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.christiantoday.co.kr/news/375341"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                조전혁 후보, 중도보수 진영에 단일화 제안
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://christian.nocutnews.co.kr/news/6523718"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                전피연, 신천지 선거 개입 의혹 수사 촉구
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.igoodnews.net/news/articleView.html?idxno=83607"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                지방선거 후보 다수, 차별금지법 반대 입장
+              </a>
+            </li>
+          </ul>
         </section>
-      
+
         <section>
           <h3>[선교·복지]</h3>
-          <ul><li>
-  <a href="https://christian.nocutnews.co.kr/news/6523845"
-     target="_blank"
-     rel="noopener noreferrer">
-    서울광염교회, 6년간 48개국에 성경 30만권
-  </a>
-</li><li>
-  <a href="http://www.igoodnews.net/news/articleView.html?idxno=83610"
-     target="_blank"
-     rel="noopener noreferrer">
-    새에덴교회, 참전용사 보은행사 20년째
-  </a>
-</li></ul>
+          <ul>
+            <li>
+              <a
+                href="https://christian.nocutnews.co.kr/news/6523845"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                서울광염교회, 6년간 48개국에 성경 30만권
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.igoodnews.net/news/articleView.html?idxno=83610"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                새에덴교회, 참전용사 보은행사 20년째
+              </a>
+            </li>
+          </ul>
         </section>
-      
 
-      <footer>
-        [출처] 크리스천투데이, 크리스천 노컷뉴스, 아이굿뉴스
-      </footer>
-    </div>
-  </main>
-</body>
+        <footer>[출처] 크리스천투데이, 크리스천 노컷뉴스, 아이굿뉴스</footer>
+      </div>
+    </main>
+  </body>
 </html>
