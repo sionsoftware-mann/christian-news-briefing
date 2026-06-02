@@ -20,7 +20,7 @@ const firebaseConfig = {
 const VAPID_PUBLIC_KEY =
   "BJvXpOaeXUsBrCsIQQXJxk55i0riOOCg2QQM3K43ynBkcRYdbjQdfNHvXvo2aoyog9OtHShkKgKpNKLQKq_CXlI";
 
-const API_BASE_URL = "https://api.inyeshua.com";
+const API_BASE_URL = "https://qt-api.inyeshua.com";
 // const API_BASE_URL = "http://localhost:3000";
 
 const app = initializeApp(firebaseConfig);
