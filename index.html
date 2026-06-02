@@ -307,6 +307,20 @@
   transition: all 0.2s ease;
 }
 
+      .push-button {
+        padding: 10px 14px;
+        border: 1px solid rgba(250, 204, 21, 0.45);
+        border-radius: 999px;
+        background: rgba(250, 204, 21, 0.12);
+        color: #facc15;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .push-button:hover {
+        background: rgba(250, 204, 21, 0.2);
+      }
+        
     @media (max-width: 520px) {
       body { padding: 10px; }
 
@@ -349,7 +363,9 @@
   <main class="card">
     <div class="top">
       <div class="brand">데일리브리핑</div>
-      <!-- <div class="notify">알림톡</div> -->
+      <button class="push-button" onclick="subscribePush()">
+        <u>매일 10시 알림 받기</u>
+      </button>
     </div>
 
     <div class="content">
@@ -362,68 +378,51 @@
         <section>
           <h3>[오늘 요약]</h3>
           <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375439"
+  <a href="https://www.christiantoday.co.kr/news/375447"
      target="_blank"
      rel="noopener noreferrer">
-    6.3 지방선거, 종교정책 질의 응답은 2명뿐
+    중도보수 교육감 후보 8인, 차별금지법 추진 규탄
   </a>
 </li><li>
   <a href="https://www.christiantoday.co.kr/news/375436"
      target="_blank"
      rel="noopener noreferrer">
-    이재명 정부 차별금지법 추진 내용 공개돼
+    이재명 정부, 혐오차별 방지 기본계획 수립 추진
   </a>
 </li><li>
-  <a href="https://www.christiantoday.co.kr/news/375428"
+  <a href="https://www.christiantoday.co.kr/news/375437"
      target="_blank"
      rel="noopener noreferrer">
-    지방의원 예비후보 36% 전과 기록 보유
+    김영남 목사, 대법원서 최종 무죄 확정
   </a>
 </li></ul>
         </section>
       
         <section>
-          <h3>[정치·선거]</h3>
+          <h3>[교육·정치]</h3>
           <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375439"
+  <a href="https://www.christiantoday.co.kr/news/375447"
      target="_blank"
      rel="noopener noreferrer">
-    유정복·김태흠 후보만 종교정책 질의 회신
+    서울·부산 등 8개 시도 교육감 후보 공동성명
+  </a>
+</li><li>
+  <a href="https://www.christiantoday.co.kr/news/375447"
+     target="_blank"
+     rel="noopener noreferrer">
+    학부모 교육권·표현의 자유 침해 우려 표명
   </a>
 </li><li>
   <a href="https://www.christiantoday.co.kr/news/375435"
      target="_blank"
      rel="noopener noreferrer">
-    조전혁 후보, 공소취소장 찢는 퍼포먼스
+    조전혁 후보, 청와대 앞 공소취소 비판 기자회견
   </a>
 </li><li>
-  <a href="https://www.christiantoday.co.kr/news/375428"
+  <a href="https://www.christiantoday.co.kr/news/375439"
      target="_blank"
      rel="noopener noreferrer">
-    샬롬나비 &#039;도덕성 갖춘 후보 선택&#039; 촉구
-  </a>
-</li></ul>
-        </section>
-      
-        <section>
-          <h3>[교회·선교]</h3>
-          <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375440"
-     target="_blank"
-     rel="noopener noreferrer">
-    은정감리교회, 6월 7일 숲속 음악회 개최
-  </a>
-</li><li>
-  <a href="https://christian.nocutnews.co.kr/news/6524337"
-     target="_blank"
-     rel="noopener noreferrer">
-    예장 통합, 유럽선교노회 설립 완료
-  </a>
-</li><li>
-  <a href="https://christian.nocutnews.co.kr/news/6523845"
-     target="_blank"
-     rel="noopener noreferrer">
-    서울광염교회, 6년간 48개국 성경 30만권
+    기독언론협회, 지선 후보 질의서 회신 2명만 응답
   </a>
 </li></ul>
         </section>
@@ -431,16 +430,22 @@
         <section>
           <h3>[사회·문화]</h3>
           <ul><li>
-  <a href="https://www.christiantoday.co.kr/news/375430"
+  <a href="https://www.christiantoday.co.kr/news/375445"
      target="_blank"
      rel="noopener noreferrer">
-    기아대책, 청소년 기후변화 대응 공모전
+    제14회 중독추방의 날, 청계광장서 행사 개최
   </a>
 </li><li>
-  <a href="https://www.christiantoday.co.kr/news/375433"
+  <a href="https://www.christiantoday.co.kr/news/375443"
      target="_blank"
      rel="noopener noreferrer">
-    팀 켈러 3주기 포럼서 문화 변증 강의
+    킹 오브 킹스 미디어아트 전시, 8월말까지 연장
+  </a>
+</li><li>
+  <a href="https://www.christiantoday.co.kr/news/375444"
+     target="_blank"
+     rel="noopener noreferrer">
+    한동대, 배민·야놀자 개발자 초청 AI 특강
   </a>
 </li></ul>
         </section>
@@ -490,5 +495,6 @@
       </footer>
     </div>
   </main>
+  <script type="module" src="/push.js"></script>
 </body>
 </html>
